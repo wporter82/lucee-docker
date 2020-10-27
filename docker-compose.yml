@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+    web:
+        image: lucee/lucee:5.3
+        ports:
+            - 80:8888
+        working_dir: /var/www
+        volumes:
+            - ./www/:/var/www
+            
+volumes:
+    lucee-test-data:
