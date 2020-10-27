@@ -7,6 +7,8 @@ services:
         working_dir: /var/www
         volumes:
             - ./www/:/var/www
+            - ./config/server-context/password.txt:/opt/lucee/server/lucee-server/context/password.txt
+            - ./config/server-context/lucee-server.xml:/opt/lucee/server/lucee-server/context/lucee-server.xml
             
 volumes:
     lucee-test-data:
